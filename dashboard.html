@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="show(); showTeachers(); showFees();">
+
+<div class="dashboardTop">
+
+<img src="logo.png" class="dashLogo">
+
+<div>
+<h2>OGAGA-OGHENE GROUP OF SCHOOLS</h2>
+<p>School Management Dashboard</p>
+</div>
+
+</div>
+
+<hr>
+
+<h3>Add Results</h3>
+
+<input id="name" placeholder="Student Name">
+
+<input id="subject" placeholder="Subject">
+
+<input id="ca1" placeholder="1st Test">
+
+<input id="ca2" placeholder="2nd Test">
+
+<input id="exam" placeholder="Exam">
+
+<button onclick="save()">Save Result</button>
+
+<div id="out"></div>
+
+<hr>
+
+<h3>Fees Section</h3>
+
+<input id="class" placeholder="Class">
+
+<input id="totalFee" placeholder="Total Fee">
+
+<input id="feePaid" placeholder="Amount Paid">
+
+<button onclick="addFeeRecord()">
+Save Fees
+</button>
+
+<div id="feeBox"></div>
+
+<hr>
+
+<h3>Teachers Section</h3>
+
+<input id="teacherName" placeholder="Teacher Name">
+
+<input id="teacherSubject" placeholder="Subject">
+
+<input id="teacherClass" placeholder="Class">
+
+<button onclick="addTeacher()">
+Add Teacher
+</button>
+
+<div id="teacherBox"></div>
+
+<hr>
+
+<button onclick="deleteAllResults()">
+DELETE ALL RESULTS
+</button>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
